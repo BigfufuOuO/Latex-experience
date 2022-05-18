@@ -1,0 +1,260 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+
+\usepackage{tasks}%选择题宏包，tasks环境
+\settasks{
+	label=\Alph*.,  
+	label-offset={0.4em},
+	label-align=left,
+	column-sep={2pt},
+	item-indent={15pt},before-skip={-0.7em},after-skip={-0.7em}
+}
+
+
+
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}
+
+
+
+
+\title{\heiti 2022年普通高等学校招生全国统一考试}
+
+
+\begin{document}
+	\heiti 模拟3.
+	\begin{center}
+		\songti \huge 2022年普通高等学校招生全国统一考试
+		\\
+		\heiti \Huge 理科数学
+	\end{center}
+	\heiti 注意事项:
+	\\ \songti 1.答卷前,考生务必将自己的姓名、考生号、考场号、座位号填写在答题卡上。
+	\\ 2.回答选择题时,选出每小题答案后,用铅笔把答题卡上对应题目的答案标号涂黑。如需改动，用橡皮擦干净后,再选涂其他答案标号。回答非选择题时,将答案写在答题卡上。写在本试卷上无效。
+	\\ 3.考试结束后,将本试卷和答题卡一并交回。
+	
+\section{\heiti 单项选择题}
+\begin{enumerate}
+	\item “$ 0<\theta<\dfrac{\pi}{3} $”是“$ 0<\sin \theta<\dfrac{\sqrt{3}}{2} $”的
+			\begin{tasks}(2)
+				\task 充分不必要条件
+				\task 必要不充分条件
+				\task 充要条件
+				\task 既不充分也不必要条件
+			\end{tasks}
+	\item 已知$ z=\dfrac{2\mathrm{i} }{1-\mathrm{i} } -1+2\mathrm{i}  $,则复数$z$在复平面内对应的点位于
+			\begin{tasks}(4)
+				\task 第一象限
+				\task 第二象限
+				\task 第三象限
+				\task 第四象限
+			\end{tasks}
+	\item 设$ \boldsymbol{a},\boldsymbol{b} $为非零向量，$ \lambda ,\mu \in \mathbf{R}  $,则下列命题为真命题的是
+			\begin{tasks}(2)
+				\task 若$ \boldsymbol{a} \cdot (\boldsymbol{a}-\boldsymbol{b})=0 $，则$ \boldsymbol{a}=\boldsymbol{b} $
+				\task 若$ \boldsymbol{b}=\lambda \boldsymbol{a} $，则$ \left | a \right | +\left | b \right | =\left | a+b \right |  $.
+				\task 若$ \lambda \boldsymbol{a}=\mu \boldsymbol{b} $，则$ \lambda=\mu=0 $
+				\task 若$ \left | a \right |>\left | b \right |   $，则$ (\boldsymbol{a}+\boldsymbol{b}) \cdot(\boldsymbol{a}-\boldsymbol{b})>0$
+			\end{tasks}
+	\item 已知函数$ y=f(x) $的图象与函数$ y=2^x $的图象关于直线$ y=x $对称，$ g(x) $为奇函数,且当$ x>0 $时, $ g(x)=f(x)-x $,则$ g(-8)= $
+		\begin{tasks}(4)
+			\task $ -5 $
+			\task $ -6 $
+			\task 5
+			\task 6
+		\end{tasks}
+	\item 如图,抛物线$ C:y^2=4x $的焦点为$ F $,直线$ l $与$ C $相交于$ A,B $两点，$ l $与$ y $轴相交于$ E $点. 已知$ \left | AF \right | =7 $,$ \left | BF \right | =3 $,记$ \triangle AEF $的面积为$ S_1 $，$ \triangle BEF $的面积为$ S_2 $，则$ S_1 $和$ S_2 $之间满足的关系是
+		\begin{tasks}(4)
+		\task $ S_1=2S_2 $
+		\task $ 2S_1=3S_2 $
+		\task $ 3S_1=4S_2 $
+		\task $ S_1=3S_2 $
+	\end{tasks}	
+	\begin{center}
+		\includegraphics[width=0.23\linewidth]{screenshot001}
+	\end{center}
+	\item 已知函数$ f(x)=A\sin (\omega x+\varphi ) $($ A>0,\omega >0,\left | \varphi  \right | <\dfrac{\pi}{2} $)的部分图像如图\ref{fig:screenshot002}所示，则
+		\begin{tasks}(2)
+			\task $ f\left ( x+\dfrac{\pi}{6}  \right )  $是偶函数
+			\task $ f\left ( x-\dfrac{\pi}{6}  \right ) $ 是偶函数
+			\task $ f\left ( x+\dfrac{2\pi}{3}  \right ) $ 是奇函数
+			\task $ f\left ( x-\dfrac{2\pi}{3}  \right ) $是奇函数
+		\end{tasks}
+	\begin{figure}
+		\centering
+		\begin{minipage}{200pt}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot002}
+			\caption{\heiti 第6题图}
+			\label{fig:screenshot002}
+		\end{minipage}
+		\begin{minipage}{190pt}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot003}
+			\caption{\heiti 第7题图}
+			\label{fig:screenshot003}
+		\end{minipage}
+		\begin{minipage}{200pt}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot004}
+			\caption{\heiti 第8题图}
+			\label{fig:screenshot004}
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	\item 如图\ref{fig:screenshot003}，已知四棱柱$ ABCD-A_1B_1C_1D_1 $的底面为平行四边形,$ E,F,G $分别为棱$ AA_1,CC_1,C_1D_1 $的中点,则
+	\begin{tasks}(1)
+		\task 直线$ BC_1 $与平面$ EFG $平行,直线$ BD_1 $与平面$ EFG $相交
+		\task 直线$ BC_1 $与平面$ EFG $相交,直线$ BD_1 $与平面$ EFG $平行
+		\task 直线$ BC_1 $、$ BD_1 $都与平面$ EFG $平行
+		\task 直线$ BC_1 $、$ BD_1 $都与平面$ EFG $相交
+	\end{tasks}
+	\item 某中学在学校艺术节举行“三独”比赛(独唱、独奏、独舞),由于疫情防控原因,比赛现场只有9名教师评委给每位参赛选手评分,全校4000名学生通过在线直播观看并网络评分,比赛评分采取10分制.某选手比赛后,现场9名教师原始评分中去掉一个最高分和一个最低分,得到7个有效评分如下表.对学生网络评分按$ [7,8) $,$ [8,9) $,$ [9,10] $分成三组,其频率分布直方图如图\ref{fig:screenshot004}所示. 则下列说法错误的是
+	\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c|c|c|c|c|c}
+		\hline
+		教师评委 & A & B & C & D & E & F & G \\
+		\hline 
+		有效评分 & 9.6 & 9.1 & 9.4 & 8.9 & 9.2 & 9.3 & 9.5 \\
+		\hline
+	\end{tabular}
+	\end{table}
+
+	\begin{tasks}(1)
+		\task 现场教师评委7个有效评分与9个原始评分的中位数相同
+		\task 估计全校有1200名学生的网络评分在区间$ [8,9) $内
+		\task 在去掉最高分和最低分之前，9名教师评委原始评分的极差一定大于0.7
+		\task 从学生观众中随机抽取10人,用频率估计概率，$ X $表示评分不小于9分的人数,则$ E(X)=5 $
+	\end{tasks}
+
+	\item 已知$ \sqrt{3}\tan 20^\circ +\lambda \cos 70^\circ = 3$，则$\lambda $的值为
+	\begin{tasks}(4)
+		\task $\sqrt{3} $
+		\task $ 2\sqrt{3}$
+		\task $3\sqrt{3}$
+		\task $4\sqrt{3}$
+	\end{tasks}	
+	
+	
+	
+	\item 双曲线$ C $的左、右焦点在$ x $轴上，且分别为$ F_1,F_2 $. 点$ P $在$ C $的右支上,且不与$ C $的顶点重合. 若$ \left |PF_1 \right |=3\left | PF_2 \right |  $且$ PF_1 \perp PF_2 $，双曲线$C$的焦距为2，则双曲线$C$的虚半轴长为
+	\begin{tasks}(4)
+		\task $ \dfrac{3\sqrt{10}}{5} $
+		\task $ \dfrac{\sqrt{15}}{5} $
+		\task $ \dfrac{6\sqrt{10}}{5} $
+		\task $ \dfrac{2\sqrt{15}}{5} $
+	\end{tasks}	
+	\item 设$ a,b $都为正数，$ \mathrm{e} $为自然对数的底数，若$ a\mathrm{e}^{a+1}+b<b\ln b $,则
+	\begin{tasks}(4)
+		\task $ ab>\mathrm{e} $
+		\task $ b>\mathrm{e}^{a+1} $
+		\task $ ab<\mathrm{e} $
+		\task $ b<\mathrm{e}^{a+1} $
+	\end{tasks}
+
+	\item 在矩形$ ABCD  $中,$ AB=2 $,$ AD=2\sqrt{3} $,沿对角线$ AC $将矩形折成一个大小为$ \theta $的二面角$ B-AC-D $. 若$ \cos \theta = \dfrac{1}{3} $，则点$B$与点$D$之间的距离是
+	\begin{tasks}(4)
+		\task $ \sqrt{2} $
+		\task $ 2\sqrt{2} $
+		\task $ 2\sqrt{3} $
+		\task $ 4 $
+	\end{tasks}
+\end{enumerate}
+\section{\heiti 填空题}
+\begin{enumerate}
+	\setcounter{enumi}{12}
+	\item 设函数$ f(x)=\mathrm{e}^{x-1}+x^3 $的图象在点$ (1,f(1)) $处的切线为$ l $,则直线$ l $在$ y $轴上的截距为\underline{\quad $ \blacktriangle $ \quad}.
+	\item 已知$ \left ( \sqrt{x}-\dfrac{2}{x}   \right )^n $的展开式中第3项为常数项,则这个展开式中各项系数的绝对值之和为\underline{\quad $ \blacktriangle $ \quad}.
+	\item 数列$ \left \{ a_n \right \} =1,1,2,3,5,8,13,21,34,\cdots , $称为斐波那契数列(Fibonacci sequence),该数列是由十三世纪意大利数学家莱昂纳多·斐波那契(Leonardo Fibonacci)以兔子繁殖为例子而引入,故又称为“兔子数列”.在数学上,斐波那契数列可表述为$ a_1=a_2=1 $，$ a_n=a_{n-1}+a_{n-2}(n \geqslant 3, n\in \mathbf{N}^{\text{*}}) $. 设该数列的前$n$项和为$S_n$，记$a_{2023}=m$，则$S_{2021}=$\underline{\quad $ \blacktriangle $ \quad}.(用含$m$的代数式表示).
+	\item 设$ \triangle ABC $的内角$ A,B,C $所对的边分别为$ a,b,c $，$ D $ 为$ BC $边的中点. 定义函数$ f(x)=\sqrt{3}\sin \dfrac{x}{2} \cos \dfrac{x}{2}-\cos^2\dfrac{x}{2}+\dfrac{1}{2}$，若$ f(A)=\dfrac{1}{2} $，$ a=\sqrt{3} $，则线段$ AD $的长的取值范围是\underline{\quad $ \blacktriangle $ \quad}.
+\end{enumerate}
+\section{\heiti 解答题}
+\subsection{\heiti 必做题}
+\begin{enumerate}
+	\setcounter{enumi}{16}
+	\item (本题满分12分)某公司为了解用户对其产品的满意度，从$ A $，$ B $两地区分别随机调查了20个用户，得到用户对产品的满意度评分如下:
+	\\
+	\begin{tabular}{ccccccccccc}
+	$ A $地区: &	62 & 73 & 81 & 92 & 95 & 85 & 74 & 64 & 53 & 76\\
+	 &	78 & 86 & 95 & 66 & 97 & 78 & 88 & 82 & 76 & 89 
+	\end{tabular}
+	\\
+	\begin{tabular}{cccccccccccc}
+		$ B $地区:  & 73 &  83&  62&  51& 91 & 46 & 53 & 73 & 64 & 82\\
+		& 93 & 48 & 65 & 81 & 74 & 56 & 54 & 76 & 65 &79
+	\end{tabular}
+	\begin{enumerate}[(I)]
+		\item 根据两组数据完成两地区用户满意度评分的茎叶图，并通过茎叶图比较两地区满意度评分的平均值及分散程度(不要求计算出具体值，给出结论即可);
+		\item 根据用户满意度评分，将用户的满意度从低到高分为三个等级：
+		\begin{center}
+			\begin{tabular}{c|c|c|c}
+				\hline
+				满意度评分 & 低于70分 & 70分到89分 & 不低于90分\\
+				\hline
+				满意度等级 & 不满意 & 满意 & 非常满意\\
+				\hline
+			\end{tabular}
+		\end{center}
+		记事件$ C $:“$ A $地区用户的满意度等级高于$ B $地区用户的满意度等级”，假设两地区用户的评价结果相互独立，根据所给数据，以事件发生的频率作为相应事件发生的概率，求$ C $的概率.
+	\end{enumerate}
+	
+
+	\item (本题满分12分)设等差数列$ \left \{ a_n \right \} $的前$ n $项和为$ S_n $，已知$ a_1=3 $，$ S_3=5a_1 $.
+	\begin{enumerate}[(I)]
+		\item 求数列$ \left \{ a_n \right \} $的通项公式.
+		\item 定义$ \left [ x \right ]  $为不超过$x$的最大整数，例如$[0.3]=0$，$[1.5]=1$. 设$ b_n=1+\dfrac{2}{S_n} $，数列$ \left \{ b_n \right \} $的前$n$项和为$T_n$，当$ \left [ T_1 \right ]+ \left [ T_2 \right ]+\cdots+\left [ T_n \right ]=63 $时，求$n$的值.
+	\end{enumerate}
+
+	\item (本题满分12分)如图\ref{fig:screenshot005}，四棱锥$ P-ABCD $的底面是正方形，平面$ PAB \perp$平面$ ABCD $，$ PB=AB $，$ E $为$ BC $的中点.
+	\begin{enumerate}[(I)]
+		\item 若$ \angle PBA=60^\circ $,证明:$ AE\perp PD $;
+		\item 求直线$ AE $与平面$ PAD $所成角的余弦值的取值范围.
+	\end{enumerate}
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.4\linewidth]{screenshot005}
+		\caption{\heiti 第19题图}
+		\label{fig:screenshot005}
+	\end{figure}
+	
+	
+	\item (本题满分12分)设椭圆$ E:\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a>b>0) $，圆$ C:(x-2m)^2+(y-4m)^2=1(m\neq 0) $，点$ F_1,F_2 $分别为$ E $的左、右焦点,点$ C $为圆心，$ O $为原点,线段$ OC $的垂直平分线为$ l $.已知$ E $的离心率为$ \dfrac{1}{2} $，点$ F_1,F_2 $关于直线$ l $的对称点都在圆$ C $上.
+	\begin{enumerate}[(I)]
+		\item 求椭圆$ E $的方程.
+		\item 设直线$ l $与椭圆$ E $相交于$ A,B $两点,问:是否存在实数$ m $,使直线$ AC $与$ BC $的斜率之和为$ \dfrac{2}{3} $？若存在,求实数$ m $的值;若不存在,说明理由.
+	\end{enumerate}
+	
+	\item (本题满分12分)已知函数$ f(x)=a\ln x-\sin x+x $，其中$ a $为非零常数.
+	\begin{enumerate}[(I)]
+		\item 若函数$ f(x) $在$ (0,+\infty) $上单调递增，求$ a $的取值范围;
+		\item 证明：存在$ x_0 \in \left ( \pi,\dfrac{3\pi}{2}  \right )  $，使得$ \cos x_0 - 1 - x_0 \sin x_0 =0$，且当$ x_0^2 \cdot \sin x_0 <a<0$	时，函数$ f(x) $在$ (0,2\pi) $上恰有两个极值点.
+	\end{enumerate}
+\end{enumerate}
+\subsection{\heiti 选做题}
+\begin{enumerate}
+	\setcounter{enumi}{21}
+	\item \heiti [选修4-4：极坐标与参数方程]\songti (本题满分10分)在直角坐标$ xOy $中，圆$ C_1:x^2+y^2=4 $，圆$ C_2:(x-2)^2+y^2=4 $.
+	\begin{enumerate}[(I)]
+		\item 在以$ O $为极点，以$ x $轴正半轴为极轴的极坐标系中，分别写出圆$ C_1,C_2 $的极坐标方程，并求出圆$ C_1,C_2 $的交点坐标(用极坐标表示);
+		\item 求圆$ C_1 $与$ C_2 $的公共弦的参数方程.
+	\end{enumerate}
+	\item \heiti [选修4-5：不等式选讲]\songti (本题满分10分) 已知$ a>0,b>0,c>0 $，函数$ f(x)=\left | x+a \right | +\left | x-b \right | +c $的最小值为4.
+	\begin{enumerate}[(I)]
+		\item 求$a+b+c$的值.
+		\item 求$ \dfrac{1}{4}a^2+\dfrac{1}{9}b^2+c^2$的最小值.
+	\end{enumerate}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,264 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{theorem}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}
+
+\begin{document}
+	\begin{center}
+		\songti \Large 2022年普通高等学校招生全国统一考试理科数学模拟3
+		\\ \heiti 参考答案
+	\end{center}
+\section{\heiti 单项选择题}
+\subsection{\heiti 答案}
+\begin{center}
+	\begin{tabular}{ccccccccccccc}
+		\hline 
+		题目 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+		\hline
+		答案 & A & B & D & C & C & D & A & C & D & B & B & B \\
+		\hline
+	\end{tabular}
+\end{center}
+\subsection{\heiti 提示}
+\begin{enumerate}
+	\setcounter{enumi}{6}
+	\item 取$ EF $中点.
+	\item 极差可以等于0.7.
+	\item 把角化相等. 因而$ \cos 70^\circ=\sin 20^\circ $. 再把函数名化相等. 即$ \lambda \sin 20^\circ \cos 20^\circ=3\cos 20^\circ -\sqrt{3} \sin 20^\circ =2\sqrt{3}(\sin 60^\circ \cos 20^\circ-\cos 60^\circ \sin 20^\circ) $. 
+	\item 虚轴长是$ 2b $,因而虚半轴长是$ b $.
+	\item 代数变形$ ae^{a+1}<b(\ln b-1)<b \ln \dfrac{b}{e} $,即$ e^a \ln e^a<\dfrac{b}{e} \ln \dfrac{b}{e} $. 由$ f(x)=x \ln x $的单调性知$ e^a<\dfrac{b}{e} $. 注意这里$ e $的指数幂与对数的互化关系，即$ x=e^{\ln x} $,是\heiti 非常常用的技巧\songti ，要善于总结.
+	\item 作$ BE\perp AC$ 于$ E $,$DF\perp AC $于$ F $,则$ \theta =\left \langle \overrightarrow{EB} ,\overrightarrow{FD}  \right \rangle  $. 由向量$ \overrightarrow{BD} =\overrightarrow{BE} +\overrightarrow{EF} +\overrightarrow{FD}  $,两边平方算模长.
+\end{enumerate}
+\section{\heiti 填空题}
+\begin{enumerate}
+	\setcounter{enumi}{12}
+	\item \underline{\quad $ -2 $ \quad}.
+	\item \underline{\quad 729\quad}.(或填\underline{\quad$ 3^6 $\quad}).
+	\\ 提示：$ \left ( \sqrt{x}-\dfrac{2}{x}   \right ) ^6 $各项系数的绝对值之和即$ \left ( \sqrt{x}+\dfrac{2}{x}   \right ) ^6 $各项系数之和，令后者$ x=1 $即可.
+	\item \underline{\quad $ m-1 $\quad }.
+	\\ 提示：$ a_n-a_{n-1}=a_{n-2} $，然后用逐差法知$ a_n-a_2=S_{n-2} $.
+	\item \underline{\quad $ \left (\dfrac{\sqrt{3} }{2} ,\dfrac{3}{2}   \right ]  $\quad}.
+	\\ 提示：由余弦定理知$ b^2+c^2=bc+3 $. 用中线长公式知$ AD^2=\dfrac{b^2+c^2}{2}-\dfrac{3}{4}=\dfrac{2bc+3}{4} $. 现在求$ bc $的取值范围. 注意到$ bc+3=b^2+c^2\geqslant 2bc $，知$ 0<bc\leqslant 3 $.
+\end{enumerate}
+\section{\heiti 解答题}
+\begin{enumerate}
+	\setcounter{enumi}{16}
+	\item (12分)
+	\begin{enumerate}[(I)]
+		\item 两地区用户满意度评分的茎叶图如下：\\
+			\begin{tabular}{r|l|l}
+				A地区 &   & B地区       \\ \hline
+				\multicolumn{1}{l|}{}    & 4 & 6 8       \\
+				3                        & 5 & 1 3 6 4   \\
+				6 4 2                    & 6 & 2 4 5 5    \\
+				6 8 8 6 4 3              & 7 & 3 3 4 6 9 \\
+				9 2 8 6 5 1              & 8 & 3 2 1     \\
+				7 5 5 2                  & 9 & 1 3     
+			\end{tabular}\dotfill{4分}
+			\\通过茎叶图可以看出，A地区用户满意度评分的平均值高于B地区用户满意度评分的平均值;A地区用户满意度评分比较集中B地区用户满意度评分比较分散.\dotfill{6分}
+		\item 记 $C_{A 1}$ 表示事件: “A地区用户满意度等级为满意或非常满意”;
+		\\$C_{A 2}$ 表示事件: “A地区用户满意度等级为非常满意”;
+		\\$C_{B 1}$ 表示事件: “B地区用户满意度等级为不满意”;
+		\\$C_{B 2}$ 表示事件: “B地区用户满意度等级为满意”.
+		\\则 $C_{A 1}$ 与 $C_{B 1}$ 独立， $C_{A 2}$ 与 $C_{B 2}$ 独立， $C_{B 1}$ 与 $C_{B 2}$ 互斥， $C=C_{B 1} C_{A 1} \cup C_{B 2} C_{A 2}$.
+		\\$P(C)=P\left(C_{B 1} C_{A 1} \cup C_{B 2} C_{A 2}\right)=P\left(C_{B 1} C_{A 1}\right)+P\left(C_{B 2} C_{A 2}\right)=P\left(C_{B 1}\right) P\left(C_{A 1}\right)+P\left(C_{B 2}\right) P\left(C_{A 2}\right)$.
+		\\由所给数据得 $C_{A 1}, C_{A 2}, C_{B 1}, C_{B 2}$ 发生的概率分别为 $\dfrac{16}{20}, \dfrac{4}{20}, \dfrac{10}{20}, \dfrac{8}{20}$.\dotfill{10分}
+		\\故 $P\left(C_{A 1}\right)=\dfrac{16}{20}, P\left(C_{A 2}\right)=\dfrac{4}{20}, P\left(C_{B 1}\right)=\dfrac{10}{20}, P\left(C_{B 2}\right)=\dfrac{8}{20}$
+		\\故 $P(C)=\dfrac{9}{20} \times \dfrac{16}{20}+\dfrac{10}{20} \times \dfrac{4}{20}=0.48$.\dotfill{12分}
+	\end{enumerate}
+	\item (12分)
+	\begin{enumerate}[(I)]
+		\item  设等差数列 $\left\{a_{n}\right\}$ 的公差为 $d$, 因为 $a_{1}=3$, 则 $S_{3}=3 a_{1}+3 d=9+3 d$.\dotfill{2分}
+		\\因为 $S_{3}=5 a_{1}=15$, 则 $9+3 d=15$, 得 $d=2$.\dotfill{3分}
+		\\所以数列 $\left\{a_{n}\right\}$ 的通项公式是 $a_{n}=3+2(n-1)=2 n+1$.\dotfill{4分}
+		\item 因为 $S_{n}=3 n+\dfrac{n(n-1)}{2} \times 2=n^{2}+2 n$, 
+		\\则 $b_{n}=1+\dfrac{2}{S_{n}}=1+\dfrac{2}{n(n+2)}=1+\dfrac{1}{n}-\dfrac{1}{n+2}$.\dotfill{6分}
+		\\所以
+		\begin{align*}
+			T_{n} &=n+\left(1-\dfrac{1}{3}\right)+\left(\dfrac{1}{2}-\dfrac{1}{4}\right)+\left(\dfrac{1}{3}-\dfrac{1}{5}\right)+\cdots+\left(\dfrac{1}{n-1}-\dfrac{1}{n+1}\right)+\left(\dfrac{1}{n}-\dfrac{1}{n+2}\right) \\
+			&=n+1+\left(\dfrac{1}{2}-\dfrac{1}{n+1}-\dfrac{1}{n+2}\right)
+		\end{align*}
+		\dotfill{8分}\\
+		当 $n \leqslant 2$ 时, 因为 $-\dfrac{1}{3} \leqslant \dfrac{1}{2}-\dfrac{1}{n+1}-\dfrac{1}{n+2}<0$, 则 $\left[T_{n}\right]=n$.\dotfill{9分}
+		\\当 $n \geqslant 3$ 时, 因为 $0<\dfrac{1}{2}-\dfrac{1}{n+1}-\dfrac{1}{n+2}<\dfrac{1}{2}$, 则 $\left[T_{n}\right]=n+1$.\dotfill{10分}
+		\\因为 $\left[T_{1}\right]+\left[T_{2}\right]+\cdots+\left[T_{n}\right]=63$, 则 $1+2+4+5+\cdots+(n+1)=63$, 即 $3+\dfrac{(n-2)(4+n+1)}{2}=63$,
+		\\即 $n^{2}+3 n-130=0$, 即 $(n-10)(n+13)=0 .$ \\因为 $n \in \mathbf{N}^{*}$, 所以 $n=10$.\dotfill{12分}
+	\end{enumerate}
+	\item (12分)
+	\begin{figure}[htbp]
+		\centering
+		\begin{minipage}{220pt}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot006}
+			\caption{\heiti 第19题解1}
+			\label{fig:screenshot006}
+		\end{minipage}
+		\begin{minipage}{220pt}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot007}
+			\caption{\heiti 第19题解2}
+			\label{fig:screenshot007}
+		\end{minipage}
+	\end{figure}
+	\begin{enumerate}[(I)]
+		\item \heiti 解法一: \songti 如图\ref{fig:screenshot006}，取 $A B$ 的中点 $F$, 连接 $P F, D F .$
+		\\因为 $P B=A B, \angle P B A=60^{\circ}$, 则 $\triangle P A B$ 为正三角形,所以 $P F \perp A B$.
+		\\因为平面 $P A B \perp$ 平面 $A B C D$, $ PF \subset $平面$ PAB $，则 $P F \perp$ 平面 $A B C D$.
+		\\因为 $A E \subset$ 平面 $A B C D$, 则 $P F \perp A E$. \dotfill{1分}
+		\\因为四边形 $A B C D$ 为正方形, $E$ 为 $B C$ 的中点, \\则
+		$\operatorname{Rt} \triangle D A F \cong \operatorname{Rt} \triangle A B E$, 所以 $\angle A D F=\angle B A E$,
+		\\从而 $\angle A D F+\angle E A D=\angle B A E+\angle E A D=\angle B A D=90^{\circ}$,
+		所以 $D F \perp A E$. \dotfill{3分}
+		\\又$ DF\cap PF=F $,$ DF\subset  $平面$ PDF $，$ PF\subset  $平面$ PDF $，
+		\\所以$  $ $A E \perp$ 平面 $P D F$, 而$ PD\subset $平面$ PDF $，所以 $A E \perp P D . $\dotfill{5分}
+		\\ \heiti 解法二：\songti 因为平面 $P A B \perp$ 平面 $A B C D, A D \perp A B$, 
+		\\则
+		$A D \perp$ 平面 $P A B$, 所以 $A D \perp A P$, 从而 $\overrightarrow{A B} \cdot \overrightarrow{A D}=0, \overrightarrow{A P} \cdot \overrightarrow{A D}=0$.\dotfill{2分}
+		\\因为 $P B=A B, \angle P B A=60^{\circ}$, 则 $\triangle P A B$ 为正三角形.
+		\\设 $A B=2$, 则 $A D=A P=2$.
+		\\所以 $\overrightarrow{A E} \cdot \overrightarrow{P D}=(\overrightarrow{A B}+\overrightarrow{B E}) \cdot(\overrightarrow{A D}-\overrightarrow{A P})=\left(\overrightarrow{A B}+\dfrac{1}{2} \overrightarrow{A D}\right) \cdot(\overrightarrow{A D}-\overrightarrow{A P})=\dfrac{1}{2} \overrightarrow{A D}^{2}-\overrightarrow{A B} \cdot \overrightarrow{A P}=2-4 \cos 60^{\circ}=0$,\dotfill{4分}
+		\\则 $\overrightarrow{A E} \perp \overrightarrow{P D}$, 所以 $A E \perp P D$.\dotfill{5分}
+		\item \heiti 解法一：\songti 如图\ref{fig:screenshot006}，分别取 $P A, P D$ 的中点 $G, H$, 则 $G H \parallel = \dfrac{1}{2} A D$.
+		又 $B E \parallel = \dfrac{1}{2} A D$, 则 $G H \parallel = B E$\footnote{符号$ \parallel =  $定义为“平行且等于”. 由于计算机字体局限性，无法打出原本的符号，故印刷以此代替也可.}, 所以四边形 $B G H E$ 为平行四边形, 从而 $E H / / B G$.\dotfill{6分}
+		\\因为 $P B=A B$, 则 $B G \perp P A$. 
+		\\因为平面 $P A B \perp$ 平面 $A B C D, A D \perp A B$, $ AD\subset $平面$ABCD$，则 $A D \perp$ 平面 $P A B$,
+		\\$ BG\subset $平面$ PAB $，从而 $A D \perp B G$, 
+		\\又$ PA\bigcap AD=A $，$ PA\subset  $平面$ PAD $，$ AD\subset  $平面$ PAD $，
+		\\所以 $B G \perp$ 平面 $P A D$, 从而 $E H \perp$ 平面 $P A D$.
+		连接 $A H$, 则 $\angle E A H$ 为直线 $A E$ 与平面 $P A D$ 所成的角.\dotfill{8分}
+		\\不妨设正方形 $A B C D$ 的边长为 $1, P A=x(0<x<2)$, 则 $B E=G H=\dfrac{1}{2}, A G=\dfrac{x}{2}$.
+		\\从而 $A E=\sqrt{A B^{2}+B E^{2}}=\dfrac{\sqrt{5}}{2}, A H=\sqrt{A G^{2}+G H^{2}}=\dfrac{\sqrt{x^{2}+1}}{2}$.\dotfill{10分}
+		\\在 Rt $\triangle A H E$ 中, $\cos \angle E A H=\dfrac{A H}{A E}=\dfrac{\sqrt{x^{2}+1}}{\sqrt{5}}$.
+		\\因为当 $0<x<2$ 时, $f(x)=\dfrac{\sqrt{x^{2}+1}}{\sqrt{5}}$ 单调递增, 则 $\cos \angle E A H \in\left(\dfrac{\sqrt{5}}{5}, 1\right)$,
+		\\所以所以直线$ AE $与平面$ PAD $所成角的余弦值的取值范围是$ \left(\dfrac{\sqrt{5}}{5}, 1\right) $.\dotfill{12分}
+		\\ \heiti 解法二：\songti 如图\ref{fig:screenshot007}，以直线 $A D$ 为 $x$ 轴, $A B$ 为 $y$ 轴, 过点 $A$ 且垂直于平面 $A B C D$ 的直线为 $z$ 轴,建立空间直角坐标系.\dotfill{6分} 
+		\\设正方形 $A B C D$ 的边长为 1, 则 $\overrightarrow{A D}=(1,0,0), \overrightarrow{A E}=\left(\dfrac{1}{2}, 1,0\right) .$\dotfill{7分}
+		\\在平面 $P A B$ 内过点 $P$ 作 $A B$ 的垂线,垂足为 $M .$
+		\\因为平面 $P A B \perp$ 平面 $A B C D$,$ PM\subset  $平面$ PAB $ ，则 $P M \perp$ 平面 $A B C D .$
+		\\设 $A M=a(0<a<2)$, 则 $B M=|1-a| .$
+		\\因为 $P B=1$, 则 $P M=\sqrt{P B^{2}-B M^{2}}=\sqrt{1-(1-a)^{2}}=\sqrt{2 a-a^{2}}$,\dotfill{8分} 
+		\\所以 $\overrightarrow{A P}=\left(0, a, \sqrt{2 a-a^{2}}\right)$. 
+		\\设 $\boldsymbol{m}=(x, y, z)$ 为平面 $P A D$ 的一个法向量, 则 $\left\{\begin{array}{l}\boldsymbol{m} \cdot \overrightarrow{A D}=0, \\ \boldsymbol{m} \cdot \overrightarrow{A P}=0,\end{array}\right.$ 即 $\left\{\begin{array}{l}x=0, \\ a y+\sqrt{2 a-a^{2}} z=0 .\end{array}\right.$
+		\\取 $z=-a$, 则 $y=\sqrt{2 a-a^{2}}$, 所以 $\boldsymbol{m}=\left(0, \sqrt{2 a-a^{2}},-a\right)$.\dotfill{9分}
+		\\于是 $\boldsymbol{m} \cdot \overrightarrow{A E}=\sqrt{2 a-a^{2}},|\boldsymbol{m}|=\sqrt{2 a}$.
+		\\又 $|\overrightarrow{A E}|=\dfrac{\sqrt{5}}{2}$, 则 $\cos \langle\boldsymbol{m}, \overrightarrow{A E}\rangle=\dfrac{\boldsymbol{m} \cdot \overrightarrow{A E}}{|\boldsymbol{m}| \cdot|\overrightarrow{A E}|}=\dfrac{2}{\sqrt{5}} \sqrt{1-\dfrac{a}{2}}$.\dotfill{10分}
+		\\设直线 $A E$ 与平面 $P A D$ 所成的角为 $\theta$, 则 $\sin \theta=\cfrac{2}{\sqrt{5}} \sqrt{1-\dfrac{a}{2}}$.
+		\\从而 $\cos \theta=\sqrt{1-\sin ^{2} \theta}=\sqrt{\dfrac{2 a+1}{5}}$.\dotfill{11分}
+		\\因为函数 $f(a)=\sqrt{\dfrac{2 a+1}{5}}$ 单调递增, 则当 $0<a<2$ 时, 则 $\cos \theta \in\left(\dfrac{\sqrt{5}}{5}, 1\right)$,
+		\\所以直线 $A E$ 与平面 $P A D$ 所成角的余弦值的取值范围是 $\left(\dfrac{\sqrt{5}}{5}, 1\right)$.\dotfill{12分}
+	\end{enumerate}
+	\item (12分)
+	\begin{enumerate}[(I)]
+		\item 由已知, $e=\dfrac{c}{a}=\dfrac{1}{2}$, 则 $a=2 c$.\dotfill{1分}
+		\\设点 $F_{1}, F_{2}$ 关于直线 $l$ 的对称点分别为 $M, N$, 因为点 $O, C$ 关于直线 $l$ 对称, $O$ 为线段 $F_{1} F_{2}$ 的中点,则 $C$ 为线段 $M N$ 的中点, 从而线段 $M N$ 为圆 $C$ 的一条直径, 所以 $\left|F_{1} F_{2}\right|=|M N|=2$, 即 $2 c=2$, 即 $c=1$.\dotfill{3分}
+		\\于是 $a=2, b^{2}=a^{2}-c^{2}=3$, 所以椭圆 $E$ 的方程是 $\dfrac{x^{2}}{4}+\dfrac{y^{2}}{3}=1$.\dotfill{4分}
+		\item 因为原点 $O$ 为线段 $F_{1} F_{2}$ 的中点, 圆心 $C$ 为线段 $M N$ 的中点, 直线 $l$ 为线段 $O C$ 的垂直平分线,所以点 $O$ 与 $C$ 也关于直线 $l$ 对称,
+		\\因为点 $C(2 m, 4 m)$, 则线段 $O C$ 的中点为 $(m, 2 m)$, 直线 $O C$ 的斜率为 2 , 又直线 $l$ 为线段 $O C$ 的垂直平分线, 
+		\\所以直线 $l$ 的方程为 $y-2 m=-\dfrac{1}{2}(x-m)$, 即 $y=-\dfrac{1}{2} x+\dfrac{5 m}{2}$.\dotfill{6分}
+		\\将 $y=-\dfrac{1}{2} x+\dfrac{5 m}{2}$ 代入 $\dfrac{x^{2}}{4}+\dfrac{y^{2}}{3}=1$, 
+		\\得 $3 x^{2}+4\left(-\dfrac{x}{2}+\dfrac{5 m}{2}\right)^{2}=12$, 即 $4 x^{2}-10 m x+25 m^{2}-12=0$.
+		\\设点 $A\left(x_{1}, y_{1}\right), B\left(x_{2}, y_{2}\right)$, 则 $x_{1}+x_{2}=\dfrac{5 m}{2}, x_{1} x_{2}=\dfrac{25 m^{2}-12}{4} .$\dotfill{7分}
+		\\所以 
+		\begin{align*}
+			k_{A C}+k_{B C}&=\dfrac{y_{1}-4 m}{x_{1}-2 m}+\dfrac{y_{2}-4 m}{x_{2}-2 m}=-\dfrac{1}{2}\left(\dfrac{x_{1}+3 m}{x_{1}-2 m}+\dfrac{x_{2}+3 m}{x_{2}-2 m}\right)\\
+			&=-\dfrac{\left(x_{1}+3 m\right)\left(x_{2}-2 m\right)+\left(x_{2}+3 m\right)\left(x_{1}-2 m\right)}{2\left(x_{1}-2 m\right)\left(x_{2}-2 m\right)}\\
+			&=-\dfrac{2 x_{1} x_{2}+m\left(x_{1}+x_{2}\right)-12 m^{2}}{2 x_{1} x_{2}-4 m\left(x_{1}+x_{2}\right)+8 m^{2}}
+		\end{align*}
+		\dotfill{8分} \\
+		由已知, $k_{A C}+k_{B C}=\dfrac{2}{3}$, 则 $\dfrac{2 x_{1} x_{2}+m\left(x_{1}+x_{2}\right)-12 m^{2}}{2 x_{1} x_{2}-4 m\left(x_{1}+x_{2}\right)+8 m^{2}}+\dfrac{2}{3}=0$, 
+		\\得 $2 x_{1} x_{2}-m\left(x_{1}+x_{2}\right)-4 m^{2}=0$.
+		\\所以 $\dfrac{25 m^{2}-12}{2}-\dfrac{5 m^{2}}{2}-4 m^{2}=0$, 即 $m^{2}=1$, 即 $m=\pm 1,$\dotfill{10分}
+		\\因为直线 $l$ 与椭圆 $E$ 相交, 则 $\Delta=100 m^{2}-16\left(25 m^{2}-12\right)>0$, 
+		\\解得 $m^{2}<\dfrac{16}{25}$, 即 $|m|<\dfrac{4}{5}$.
+		\\因为 $\dfrac{4}{5}<1$, 所以不存在实数 $m$, 使直线 $A C$ 与 $B C$ 的斜率之和为 $\dfrac{2}{3}$.\dotfill{12分}
+	\end{enumerate}
+	\item (12分)
+	\begin{enumerate}[(I)]
+		\item $f^{\prime}(x)=\dfrac{a}{x}-\cos x+1(x>0) $.\dotfill{1分}
+		\\若 $a>0$, 因为 $x>0,1-\cos x \geqslant 0$, 则 $f^{\prime}(x)>0$, 所以 $f(x)$ 在 $(0,+\infty)$ 上单调递增,符合要求.\dotfill{2分}
+		\\若 $a<0$, 则当 $x \in\left(0,-\dfrac{a}{2}\right)$ 时, $\dfrac{a}{x}<-2$, 从而 $f^{\prime}(x)<-2-\cos x+1=-(1+\cos x) \leqslant 0$,
+		\\所以 $f(x)$ 在 $\left(0,-\dfrac{a}{2}\right)$ 上单调递减, 不合要求.
+		\\综上分析, $a$ 的取值范围是 $(0,+\infty) .$\dotfill{4分}
+		\item \kaishu 拆分成两个问题：第一，先证明：存在$ x_0 \in \left ( \pi,\dfrac{3\pi}{2}  \right )  $，使得$ \cos x_0 - 1 - x_0 \sin x_0 =0$；第二，再证明：当$ x_0^2 \cdot \sin x_0 <a<0$	时，函数$ f(x) $在$ (0,2\pi) $上恰有两个极值点. 接下来先证明第一个问题.\songti \\令 $f^{\prime}(x)=0$, 则 $\dfrac{a}{x}-\cos x+1=0$, 即 $a=x \cos x-x$.
+		\\设 $g(x)=x \cos x-x$, 则 $g^{\prime}(x)=\cos x-x \sin x-1$.
+		\begin{enumerate}
+			\item 当 $x \in\left(\pi, \dfrac{3 \pi}{2}\right)$ 时, $g^{\prime \prime}(x)=-\sin x-(\sin x+x \cos x)=-(2 \sin x+x \cos x)$.
+			\\因为 $\sin x<0, \cos x<0$, 则 $g^{\prime \prime}(x)>0$, 从而 $g^{\prime}(x)$ 单调递增. 
+			\\因为 $g^{\prime}(\pi)=-2<0, g^{\prime}\left(\dfrac{3 \pi}{2}\right)=\dfrac{3 \pi}{2}-1>0$,
+			则 $g^{\prime}(x)$ 在 $\left(\pi, \dfrac{3 \pi}{2}\right)$ 上有唯一零点, 记为 $x_{0}$, 故存在$ x_0 \in \left ( \pi,\dfrac{3\pi}{2}  \right )  $，使得$ \cos x_0 - 1 - x_0 \sin x_0 =0$. \dotfill{6分}
+			\\ \kaishu 再证明第二个问题. \songti
+			\\由上述可知，当 $x \in\left(\pi, x_{0}\right)$ 时, $g^{\prime}(x)<0$, 则 $g(x)$ 单调递减;当 $x \in\left(x_{0}, \dfrac{3 \pi}{2}\right)$ 时, $g^{\prime}(x)>0$, 则 $g(x)$ 单调递增.\dotfill{7分}
+			\item 当 $x \in(0, \pi)$ 时, $\cos x<1, \sin x>0$, 则 $\cos x-1<0,-x \sin x<0$, 从而 $g^{\prime}(x)<0$, 所以 $g(x)$ 单调递减.\dotfill{8分}
+			\item 当 $x \in\left(\dfrac{3 \pi}{2}, 2 \pi\right)$ 时, $g^{\prime \prime \prime}(x)=-(2 \cos x+\cos x-x \sin x)=x \sin x-3 \cos x$.
+			\\因为 $\sin x<0, \cos x>0$, 则 $g^{\prime \prime \prime}(x)<0$, 从而 $g^{\prime \prime}(x)$ 单调递减.
+			\\因为 $g^{\prime \prime}\left(\dfrac{3 \pi}{2}\right)=2>0, g^{\prime \prime}(2 \pi)=-2 \pi<0$, 则 $g^{\prime \prime}(x)$ 在 $\left(\dfrac{3 \pi}{2}, 2 \pi\right)$ 内有唯一零点, 记为 $x_{1}$, 
+			\\当 $x \in\left(\dfrac{3 \pi}{2}, x_{1}\right)$ 时, $g^{\prime \prime}(x)>0, g^{\prime}(x)$ 单调递增; 当 $x \in\left(x_{1}, 2 \pi\right)$ 时, $g^{\prime \prime}(x)<0, g^{\prime}(x)$ 单调递减.
+			\\因为 $g^{\prime}\left(\dfrac{3 \pi}{2}\right)=\frac{3 \pi}{2}-1>0, g^{\prime}(2 \pi)=0$, 则当 $x \in\left(\dfrac{3 \pi}{2}, 2 \pi\right)$ 时, $g^{\prime}(x)>0$, 所以 $g(x)$ 单调递增. \dotfill{10分}
+		\end{enumerate}
+	综上分析, $g(x)$ 在 $\left(0, x_{0}\right)$ 上单调递减, 在 $\left(x_{0}, 2 \pi\right)$ 上单调递增.
+	\\因为 $g(0)=g(2 \pi)=0$, 则当 $g\left(x_{0}\right)<a<0$ 时, 直线 $y=a$ 与函数 $g(x)$ 的图象在 $(0,2 \pi)$ 上有两个交点,
+	从而 $f^{\prime}(x)$ 有两个变号零点, 即 $f(x)$ 在 $(0,2 \pi)$ 上恰有两个极值点.\dotfill{11分}
+	\\而 $g^{\prime}\left(x_{0}\right)=0$, 则 $\cos x_{0}-x_{0} \sin x_{0}-1=0$, 即 $\cos x_{0}=1+x_{0} \sin x_{0}$.
+	从而 $g\left(x_{0}\right)=x_{0} \cos x_{0}-x_{0}=x_{0}\left(1+x_{0} \sin x_{0}\right)-x_{0}=x_{0}^{2} \sin x_{0}$. 
+	\\故此时的$ x_0 $即为所求.\dotfill{12分}
+	\end{enumerate}
+		\item (10分)
+	\begin{enumerate}[(I)]
+		\item 根据公式: $x=\rho \cos \theta, y=\rho \sin \theta, \rho^{2}=x^{2}+y^{2}$ 
+		\\圆 $C_{1}, C_{2}$ 的极坐标方程分别为: $\rho=2, \rho=4 \cos \theta(\rho>0)$ \dotfill{4分}
+		\\联立: $\left\{\begin{array}{l}\rho=2 \\ \rho=4 \cos \theta(\rho>0)\end{array}\right.$ ，解得: $\left\{\begin{array}{l}\rho=2 \\ \theta=\pm \dfrac{\pi}{3}\end{array}\right.$
+		\\$\therefore$ 圆 $C_{1}$ 与圆 $C_{2}$ 的交点极坐标分别为: $\left(2, \dfrac{\pi}{3}\right),\left(2,-\dfrac{\pi}{3}\right)$ \dotfill{6分}
+		\item 把 (I) 中两圆交点极坐标化为直角坐标，
+		得: $(1, \sqrt{3}),(1,-\sqrt{3})$
+		\\$\therefore$ 此两圆公共弦的普通方程为: $x=1(-\sqrt{3} \leq y \leq \sqrt{3})$
+		\\$\therefore$ 此弦所在直线过 $(1,0)$ 点，倾斜角为 $90^{\circ}$
+		\\$\therefore$ 所求两圆的公共弦的参数方程为: $\left\{\begin{array}{l}x=1 \\ y=t(-\sqrt{3} \leq t \leq \sqrt{3})\end{array}\right.$ \dotfill{10分}
+	\end{enumerate}
+	\item (10分)
+	\begin{enumerate}[(I)]
+		\item 因为， $|x+a|+|x-b| \geq|-a-b|=|a+b|$ ，所以 $f(x) \geq|a+b|+c$ ，当且仅当 $(x+a)(x-b)<0$ 时，等号成
+		立，\dotfill{4分}
+		\\而$a>0, b>0$,故$\left | a+b \right | =a+b$,所以 $f(x)$ 的最小值为 $a+b+c$,故 $a+b+c=4$. \dotfill{5分}
+		\item 由 (I) 知 $a+b+c=4$ ，
+		\\由柯西不等式得
+		\begin{align*}
+			\left(\dfrac{1}{4} a^{2}+\dfrac{1}{9} b^{2}+c^{2}\right)(2^2+3^2+1^2) &\geq\left(\dfrac{a}{2} \times 2+\dfrac{b}{3} \times 3+c \times 1\right)^{2} \\
+			&=(a+b+c)^{2}=16
+		\end{align*}
+		即 $\dfrac{1}{4} a^{2}+\dfrac{1}{9} b^{2}+c^{2} \geq \dfrac{7}{8}$ ，\dotfill{8分}
+		\\当且仅当 $\dfrac{1}{2} a=\dfrac{1}{3} b=\dfrac{c}{3}$ ，即 $a=\dfrac{8}{7}, b=\dfrac{18}{7}, c=\dfrac{2}{7}$ 时，等号成立.
+		\\所以 $\dfrac{1}{4} a^{2}+\dfrac{1}{9} b^{2}+c^{2}$ 的最小值为 $\dfrac{8}{7}$.\dotfill{10分}
+	\end{enumerate}
+\end{enumerate}
+\section{\heiti 说明与注意}
+\subsection{\heiti 说明}
+本试题改编自八省强校T8(东北育才学校、福州一中、广东实验中学、湖南师大附中、华师一附中、南京师大附中、石家庄二中、西南大学附中
+)联考. 以上参加联考的学校，均在省会城市，均为本省、市高考成绩、五大学科奥林匹克竞赛成绩非常优秀的高中.
+
+尽管2022年“第二次八省联考”的试题，不是国家教育部考试中心命制. 但是试题命制的水平也是比较高的.据了解，2021年12月的“第二次八省联考”试题，命题由湖北省武汉市华中师范大学测量与评价研究中心统一负责。语文、数学、英语等三科试题，由湖南师范大学附属中学命制，政治、历史、地理、物理、化学、生物等六个选考科目试题，由湖北省武汉市华中师范大学第一附属中学负责命制。由湖北省武汉市华中师范大学测量与评价研究中心统一负责审稿，以确保这次常规模拟考试的有效性和精确性. 
+
+在原试题中，八省强校数学方面，最高分是144分，平均分是55.66分，难度0.37，区分度0.35.
+
+本套改编试题中，除了17题是2015年全国II卷的统计题(因为原卷统计题太恶心)外，选填是原题或在原题的基础上进行非常微小的改动，保留了原题的思想. 大题除了21题外，其余照搬原题，评分标准也是照搬的，十分严谨苛刻.
+
+21题的(II)表述改动如下：
+\begin{compactdesc}
+	\item[\heiti 原题] \kaishu 设$ \theta \in \left ( \pi,\dfrac{3\pi}{2}  \right )  $,且$ \cos \theta = 1+ \theta \sin \theta $. 证明：当$ \theta^2 \cdot \sin \theta\ <a<0$	时，函数$ f(x) $在$ (0,2\pi) $上恰有两个极值点.
+	\item[\heiti 改编] 证明：存在$ x_0 \in \left ( \pi,\dfrac{3\pi}{2}  \right )  $，使得$ \cos x_0 - 1 - x_0 \sin x_0 =0$，且当$ x_0^2 \cdot \sin x_0 <a<0$	时，函数$ f(x) $在$ (0,2\pi) $上恰有两个极值点.
+\end{compactdesc}
+原题的$ \theta $容易让人摸不着头脑. 因而改成了$ x_0 $来诱导往导数零点等方面思考. 而$ \theta $其实就是个零点.
+
+\subsection{\heiti 注意} 
+因而应总结其中所出现的新形式题型，以及自己没有复习到位的地方. 如14题的绝对值，18题的取整函数的解决方法，19题取值范围的解决方法，17题的茎叶图等. 考不好没有关系，本套题是十分难的，更重要的是日后的总结. 
+\end{document}

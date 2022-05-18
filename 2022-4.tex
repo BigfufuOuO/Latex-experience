@@ -1,0 +1,238 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{pifont}
+
+\usepackage{tasks}%选择题宏包，tasks环境
+\settasks{
+	label=\Alph*.,  
+	label-offset={0.4em},
+	label-align=left,
+	column-sep={2pt},
+	item-indent={15pt},before-skip={-0.7em},after-skip={-0.7em}
+}
+
+
+
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}
+
+
+\begin{document}
+	\heiti 模拟4.
+	\begin{center}
+		\songti \huge 2022年普通高等学校招生全国统一考试
+		\\
+		\heiti \Huge 理科数学
+	\end{center}
+	\heiti 注意事项:
+	\\ \songti 1.答卷前,考生务必将自己的姓名、考生号、考场号、座位号填写在答题卡上。
+	\\ 2.回答选择题时,选出每小题答案后,用铅笔把答题卡上对应题目的答案标号涂黑。如需改动，用橡皮擦干净后,再选涂其他答案标号。回答非选择题时,将答案写在答题卡上。写在本试卷上无效。
+	\\ 3.考试结束后,将本试卷和答题卡一并交回。
+
+\section{\heiti 单项选择题}
+\begin{enumerate}
+	\item 设集合$ A=\left \{ x|x<2\text{或}x>3\right \},  B=\left \{ x|\mathrm{e}^{x-1}-1<0 \right \} $，则$ A\bigcap B= $
+	\begin{tasks}(4)
+		\task $ \left ( -\infty ,1 \right )  $
+		\task $ \left ( -2,1 \right )  $
+		\task $ \left ( 1,2 \right )  $
+		\task $ \left ( 3,\infty \right )  $
+	\end{tasks}
+	\item 复平面内的向量$ \overrightarrow{OZ}  $对应的复数为$ z $，点$ Z $位于第二象限. 已知$ z $的虚部为2，且$ \left | z \right | =5 $，则$ \dfrac{1}{\overline{z} } = $
+	\begin{tasks}(4)
+		\task $ \dfrac{1}{5}+\dfrac{2}{5}\mathrm{i} $
+		\task $ -\dfrac{1}{5}-\dfrac{2}{5}\mathrm{i} $
+		\task $ \dfrac{1}{5}-\dfrac{2}{5}\mathrm{i} $
+		\task $ -\dfrac{1}{5}+\dfrac{2}{5}\mathrm{i} $
+	\end{tasks}
+	\item 设$ a,b,c,d $为实数，则“$ a>b,c>d $”是“$ a+c>b+d $”的
+	\begin{tasks}(2)
+		\task 充分而不必要条件
+		\task 必要而不充分条件
+		\task 充分必要条件
+		\task 既不充分也不必要条件
+	\end{tasks}
+	\item 某学校组建了演讲，舞蹈、航模、合唱、机器人五个社团，全校3000名学生每人都参加且只参加其中一个社团，校团委从这3000名学生中随机选取部分学生进行调查，并将调查结果绘制了如下不完整的两个统计图：
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\linewidth]{screenshot001}
+		\caption{\heiti 第4题图}
+		\label{fig:screenshot001}
+	\end{figure}
+	\\则选取的学生中参加机器人社团的学生数为
+	\begin{tasks}(4)
+		\task 50
+		\task 75
+		\task 100
+		\task 125
+	\end{tasks}
+	\item 已知$ A,B $是圆$ O:x^2+y^2=1 $上的两个动点，$ \left | AB \right |=1  $，$ C $为平面中一点且满足$ \overrightarrow{OC}=3 \overrightarrow{OA}-2\overrightarrow{OB} $，$ M $为线段$ AB $的中点，则$ \overrightarrow{OC}\cdot\overrightarrow{OM}= $
+	\begin{tasks}(4)
+		\task $ \dfrac{1}{4} $
+		\task $ \dfrac{1}{2} $
+		\task $ \dfrac{3}{4} $
+		\task $ \dfrac{3}{2} $
+	\end{tasks}
+	\item 北京2022年冬奥会吉祥物“冰墩墩”和冬残奥会吉祥物“雪容融”一亮相，好评不断，这是一次中国文化与奥林匹克精神的完美结合，是一次现代设计理念的传承与突破.为了宣传2022年北京冬奥会和冬残奥会，某学校决定派小明和小李等5名志愿者将两个吉祥物安装在学校的体育广场，若小明和小李必须安装同一个吉祥物，且每个吉祥物都至少由两名志愿者安装，则不同的安装方案种数为
+	\begin{tasks}(4)
+		\task 4
+		\task 5
+		\task 6
+		\task 8
+	\end{tasks}
+	\item $ \left ( x+\dfrac{a}{x}  \right ) \left ( 2x-\dfrac{1}{x}  \right ) ^5 $的展开式中各项系数的和为2，则该展开式中常数项为
+	\begin{tasks}(4)
+		\task $ -40 $
+		\task $ -20 $
+		\task 20
+		\task 40
+	\end{tasks}
+	\item 《中国共产党党旗党徽制作和使用的若干规定》指出，中国共产党党旗为旗面缀有金黄色党徽图案的红旗，通用规格有五种. 这五种规格党旗的长$ a_1,a_2,a_3,a_4,a_5 $(单位：cm)成等差数列，对应的宽为$ 
+	b_1,b_2,b_3,b_4,b_5 $(单位: cm),且满足$ \dfrac{a_n}{a_{n-1}}=\dfrac{b_n}{b_{n-1}}(n=2,3,4,5) $. 已知$ a_1=288,a_5=96,b_1=192 $，则$ b_3= $
+	\begin{tasks}(4)
+		\task 64
+		\task 96
+		\task 128
+		\task 160
+	\end{tasks}
+	\item 3月14日是国际圆周率日($ \pi $ Day).历史上，求圆周率$ \pi $的方法有多种，与中国传统数学中的“割圆术”相似．数学家阿尔·卡西的方法是：当正整数$ n $充分大时，计算单位圆的内接正$ 6n $边形的周长和外切正$ 6n $边形(各边均与圆相切的正$ 6n $边形)的周长，将它们的算术平均数作为$ 2\pi $的近似值．按照阿尔·卡西的方法，$ \pi $的近似值的表达式是
+	\begin{tasks}(2)
+		\task $ 3n\left ( \sin \dfrac{30^\circ }{n} +\tan \dfrac{30^\circ }{n}  \right )  $
+		\task $ 6n\left ( \sin \dfrac{30^\circ }{n} +\tan \dfrac{30^\circ }{n}  \right )  $
+		\task $ 3n\left ( \sin \dfrac{60^\circ }{n} +\tan \dfrac{60^\circ }{n}  \right )  $
+		\task $ 6n\left ( \sin \dfrac{60^\circ }{n} +\tan \dfrac{60^\circ }{n}  \right )  $
+	\end{tasks}
+	\item 高斯是德国著名的数学家，近代数学奠基者之一，享有“数学王子”的美誉. 用其名字命名的“高斯函数”如下：设$ x $为实数，用$ \left [ x\right ]  $表示不超过$ x $的最大整数，则称$ y= \left [ x\right ]   $为高斯函数，也称取整函数. 例如：$  \left [ -3.7\right ]  =-4, \left [ 2.3\right ] =2 $. 已知$ f(x)=\dfrac{\mathrm{e}^x-1 }{\mathrm{e}^x+1} -\dfrac{1}{2}  $，则函数$ y=\left [ f(x)\right ] $的值域为
+	\begin{tasks}(4)
+		\task $ \left \{ 0 \right \}  $
+		\task $ \left \{ -1,0 \right \}  $
+		\task $ \left \{ -2,-1,0 \right \}  $
+		\task $ \left \{ -1,0,1 \right \}  $
+	\end{tasks}
+
+	\item 如图\ref{fig:screenshot002}左图，双曲线的光学性质为：从双曲线右焦点 发出的光线经双曲线镜面反射，反射光线的反向延长线经过左焦点. 我国首先研制成功的“双曲线新闻灯”，就是利用了双曲线的这个光学性质.某“双曲线灯”的轴截面是双曲线一部分，如图\ref{fig:screenshot002}右图，其方程为$ \dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1 $，$ F_1,F_2 $为其左、右焦点，若从右焦点$ F_2 $发出的光线经双曲线上的点$ A $和点$ B $反射后，满足$ \angle BAD=\dfrac{\pi}{2} ,\tan \angle ABC=-\dfrac{3}{4} $,则该双曲线的离心率为
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.75\linewidth]{screenshot002}
+		\caption{\heiti 第11题图}
+		\label{fig:screenshot002}
+	\end{figure}
+	\begin{tasks}(4)
+		\task $ \dfrac{\sqrt{5}}{2} $
+		\task $ \sqrt{5} $
+		\task $ \dfrac{\sqrt{10}}{2} $
+		\task $ \sqrt{10} $
+	\end{tasks}
+
+	\item 为弘扬中华民族优秀传统文化，某学校组织了《诵经典，获新知》的演讲比赛，本次比赛的冠军奖杯由一个铜球和一个托盘组成，如图\ref{fig:screenshot003}，已知铜球的体积为$ \dfrac{4\pi}{3} $，托盘由边长为4的正三角形铜片沿各边中点的连线垂直向上折叠而成. 则铜球面上一点离托盘底面$ DEF $的距离的最小值为
+	% TODO: \usepackage{graphicx} required
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.88\linewidth]{screenshot003}
+		\caption{\heiti 第12题图}
+		\label{fig:screenshot003}
+	\end{figure}
+	\begin{tasks}(4)
+		\task $ \sqrt{3}+\dfrac{\sqrt{6}}{3} $
+		\task $ \sqrt{3}+\dfrac{\sqrt{6}}{3}-1 $
+		\task $ \sqrt{3}+\dfrac{\sqrt{3}}{3} $
+		\task $ \sqrt{3}+\dfrac{\sqrt{3}}{3}-1 $
+	\end{tasks}
+\end{enumerate}
+\section{\heiti 填空题}
+\begin{enumerate}
+	\setcounter{enumi}{12}
+	\item 函数$ y=e^x $和$ y=5^{x+1} $的交点的横坐标为\underline{\quad $ \blacktriangle $ \quad}.
+	\item 曲线$ y=\ln x-\dfrac{2}{x} $在$ x=1 $处的切线的倾斜角为$ \alpha $，则$ \sin \left ( \alpha +\dfrac{\pi}{2}  \right ) = $\underline{\quad $ \blacktriangle $ \quad}.
+	\item 蟋蟀鸣叫可以说是大自然优美、和谐的音乐，蟋蟀鸣叫的频率$ y $ (每分钟鸣叫的次数)与气温$ x $ (单位：℃)存在着较强的线性相关关系.某地研究人员根据当地的气温和蟋蟀鸣叫的频率得到了如下数据：
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			$x$(℃)     & 21 & 22 & 23 & 24 & 25 & 26 & 27 \\ \hline
+			$y$(次数/分钟) & 24 & 28 & 31 & 39 & 43 & 47 & 54 \\ \hline
+		\end{tabular}
+	\end{center}
+	利用上表中的数据求得回归直线方程为$ \hat{y} =\hat{b} x+\hat{a}  $，若利用该方程知，当该地的气温为30℃时，蟋蟀每分钟鸣叫次数的预报值为68，则$ \hat{b} $的值为\underline{\quad $ \blacktriangle $ \quad}.
+	\item 在圆内接四边形$ ABCD $中，$ BC=4 $，$ \angle B=2\angle D $，$ \angle A=\dfrac{\pi}{12} $，则$ \triangle ACD $面积的最大值为\underline{\quad $ \blacktriangle $ \quad}.
+\end{enumerate}
+\section{\heiti 解答题}
+\subsection{\heiti 必做题}
+\begin{enumerate}
+	\setcounter{enumi}{16}
+	\item (本题满分12分)在\ding{172}$ \dfrac{S_n}{n}=\dfrac{a_{n+1}}{2}   $，\ding{173}$ a_{n+1}a_n =2S_n$，\ding{174}$ a_n^2+a_n=S_n $这三个条件中任选一个，补充在下面的问题中，并解答该问题.
+	\\已知正项数列 $ \left \{ a_n \right \}  $的前$ n $项和为$ S_n $，且$ a_1=1 $，并满足\underline{\quad \quad $ \blacktriangle $ \quad \quad  }.
+	\begin{enumerate}[(I)]
+		\item 求数列$ \left \{ a_n \right \}  $的通项公式.
+		\item 若$ b_n=(a_n+1)\cdot2^{a_n} $，求数列$ \left \{ b_n \right \}  $的前$ n $项和$ T_n $.
+	\end{enumerate}		
+	\fangsong 注：如果选择多个条件分别解答，则按第一个解答计分. \songti
+	\item (本题满分12分)新冠肺炎疫情爆发初期，党中央、国务院高度重视新冠病毒核酸检测工作，中央应对新型冠状病毒感染肺炎疫情工作领导小组会议作出部署，要求尽力扩大核酸检测范围，着力提升检测能力. 据统计发现，疑似病例核酸检测呈阳性的概率为$ p (0<p<1)$. 现有4例疑似病例，分别对其取样、检测，既可以逐个化验，也可以将若干个样本混合在一起化验，混合样本中只要有病毒，则化验结果呈阳性.若混合样本呈阳性，则需将该组中备用的样本再逐个化验；若混合样本呈阴性，则判定该组各个样本均为阴性，无需再化验.现有以下三种方案：
+	\\方案一： 4个样本逐个化验；
+	\\方案二： 4个样本混合在一起化验；
+	\\方案三： 4个样本平均分为两组，分别混合在一起化验.
+	\\在新冠肺炎疫情爆发初期，由于检测能力不足，若化验次数的期望值越小，则称方案越“优”.
+	\begin{enumerate}[(I)]
+		\item 若$ p=\dfrac{1}{3} $，按方案一，求4例疑似病例中恰有2例呈阳性的概率.
+		\item 若$ p=\dfrac{1}{10} $，现将该4例疑似病例样本进行化验，请通过计算说明以上三个方案中哪个是最“优”的.
+	\end{enumerate}
+	\item (本题满分12分)如图\ref{fig:screenshot004}，四棱锥$ P-ABCD $中，四边形$ ABCD $是等腰梯形，$ AB//CD $，$ PD\perp AD,AB=PB=2PD,PD=AD=CD$.
+	% TODO: \usepackage{graphicx} required
+	\begin{enumerate}[(I)]
+		\item 证明：平面$ PAD\perp $平面$ ABCD $；
+		\item 过$ PD $的平面交$ AB $于点$ E $. 若平面$ PDE $把四棱锥$ P-ABCD $分成体积相等的两部分，求平面$ PAD $与平面$ PCE $所成锐二面角的余弦值.	
+	\end{enumerate}
+	\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{200pt}
+		\centering
+		\includegraphics[width=1\linewidth]{screenshot004}
+		\caption{\heiti 第19题图}
+		\label{fig:screenshot004}
+	\end{minipage}
+	\begin{minipage}{200pt}
+		\centering
+		\includegraphics[width=0.7\linewidth]{screenshot005}
+		\caption{\heiti 第20题图}
+		\label{fig:screenshot005}
+	\end{minipage}
+\end{figure}
+	\item (本题满分12分)如图\ref{fig:screenshot005},抛物线$ E:y^2=2px (p>0)$的焦点为$ F $，四边形$ DFMN $为正方形，点 $ M $在抛物线$ E $上，过焦点$ F $的直线$ l $交抛物线$ E $于$ A,B $两点，交直线$ ND $于点$ C $.
+	\begin{enumerate}[(I)]
+		\item 若$ B $为线段$ AC $的中点，求直线$ l $的斜率；
+		\item 若正方形$ DFMN $的边长为1，直线$ MA,MB,MC $的斜率分别为$ k_1,k_2,k_3 $，问是否存在实数$ \lambda $，使得$ k_1+k_2=\lambda k_3 $?若存在，求出$ \lambda $；若不存在，请说明理由.
+	\end{enumerate}
+	\item (本题满分12分)已知函数$ f(x)=\dfrac{a}{x}-\dfrac{x}{2}+\ln x $.
+	\begin{enumerate}[(I)]
+		\item 讨论$ f(x) $的单调性.
+		\item 若$ f(x) $有两个极值点$ x_1,x_2 $，证明：$ f(x_1)+f(x_2)<e^{2a}-2 $.
+	\end{enumerate}
+\end{enumerate}
+\subsection{\heiti 选做题}
+\begin{enumerate}
+	\setcounter{enumi}{21}
+	\item \heiti [选修4-4：极坐标与参数方程]\songti (本题满分10分)在平面直角坐标系$ xOy $中，圆$ C $的参数方程为$\left\{\begin{array}{l} x = a+\cos t
+		\\ y = \sin t\end{array}\right.$($ t $为参数)，直线$ l $的参数方程为$ \left\{ \begin{array}{l}
+		x=\lambda \\
+		y=\sqrt{3} \lambda
+	\end{array}\right. $($ \lambda $为参数). 以坐标原点为极点，$ x $轴所在正半轴为极轴建立极坐标系，设$ l $与$ C $交于$ P,Q $两点.
+	\begin{enumerate}[(I)]
+		\item 求$ l $与$ C $的极坐标方程.
+		\item 求$ \left | OP \right | ^2+\left | OP \right | ^2 $的取值范围.
+	\end{enumerate}
+	\item \heiti [选修4-5：不等式选讲]\songti (本题满分10分)已知函数$ f(x)=\left | 2x+a \right | +\left | 2x-1 \right |  $.
+	\begin{enumerate}[(I)]
+		\item 若$ f\left ( \dfrac{1}{2}  \right ) +f(-1)\geqslant 8 $,求实数$ a $的取值范围.
+		\item 若对任意的$ b \in \left ( 1,+\infty  \right )  $，总存在$ x_0\in \mathbf{R} $使得$ f(x_0)\leqslant b+\dfrac{1}{b-1}+ 1 $，求实数$ a $的取值范围.
+		\end{enumerate}
+\end{enumerate}
+\end{document}

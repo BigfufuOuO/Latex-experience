@@ -1,0 +1,139 @@
+
+\usepackage{lastpage}
+\usepackage{calc}
+\usepackage{refcount}
+\newcounter{mypage}
+\newcounter{mylastpage}
+%\setcounter{mylastpage}{2*\getrefbykeydefault{LastPage}{page}{1}}
+%\usepackage{times} %use the Times New Roman fonts
+\usepackage{color}
+%\usepackage{placeins}
+\usepackage{ulem}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{setspace} % 行间距
+\usepackage{bm}%\boldsymbol 粗体
+% 数学
+\usepackage{amsmath,amsfonts,amssymb,times}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{txfonts}
+\usepackage{tagging}
+%\usetag{ans}% 注释掉该行语句不显示答案
+%\usetag{kai}
+\newcommand*\CJKunderlinecolor{\color{black}}
+\newcommand{\tkans}[1]{\iftagged{ans}{\underline{\ #1\ }.}{\underline{\qquad \phantom{#1}\qquad }.}}%
+\newcommand{\xzans}[1]{\iftagged{ans}{(\ {#1}\ )}{(\ \phantom{#1}\ )}}%
+\newcommand{\pdans}[1]{\iftagged{ans}{\hfill(\ {#1}\ )}{\hfill(\ \phantom{#1}\ )}}%
+\usepackage{enumerate}% 编号
+\usepackage{tikz,pgfplots} %绘图
+\usepackage{tkz-euclide,pgfplots}
+\usetikzlibrary{automata,positioning}
+%\usepackage[paperwidth=18.4cm,paperheight=26cm,top=1.5cm,bottom=2cm,right=2cm]{geometry} % 单页
+\usepackage[paperwidth=36.8cm,paperheight=26cm,top=2.5cm,bottom=2cm,right=2cm]{geometry}
+\lstset{language=C,keywordstyle=\color{red},showstringspaces=false,rulesepcolor=\color{green}}
+\oddsidemargin=0.5cm   %奇数页页边距
+\evensidemargin=0.5cm %偶数页页边距
+%\textwidth=14.5cm        %文本的宽度 单页
+\textwidth=30cm        %文本的宽度 单页
+
+\newsavebox{\zdx}%装订线
+
+\newcommand{\putzdx}{\marginpar{
+		\parbox{1cm}{\vspace{-1.6cm}
+			\rotatebox[origin=c]{90}{
+				\usebox{\zdx}
+		}}
+}}
+
+\newcommand{\blank}{\uline{\textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}}}
+
+\newcommand{\me}{\mathrm{e}}  %定义 对数常数e，虚数符号i,j以及微分算子d为直立体。
+\newcommand{\mi}{\mathrm{i}}
+\newcommand{\mj}{\mathrm{j}}
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\bs}{\boldsymbol}%数学黑体
+\newcommand{\ds}{\displaystyle}
+%通常我们使用的分数线是系统自己定义的分数线，即分数线的长度的预设值是分子或分母所占的最大宽度，如何让分数线的长度变长成，我们%可以在分子分母添加间隔来实现。如中文分式的命令可以定义为：
+%\newcommand{\chfrac[2]}{\cfrac{\;#1\;}{\;#2\;}}
+%\frac{1}{2} \qquad \chfrac{1}{2}
+
+\newcommand{\dfk}
+{\begin{tabular}{|p{0.05\textwidth}|p{0.05\textwidth}|}
+		\hline
+		% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+		\centering 阅卷人& \\
+		\hline
+		\centering 得~~分 &  \\
+		\hline
+\end{tabular}}
+\renewcommand{\dfk}{\hspace{-2ex}}
+\newcounter{qst}
+\renewcommand{\theqst}{\Chinese{qst}}
+\newcommand{\qst}[1]{\dfk\,{\large\heiti\refstepcounter{qst}\theqst、#1}}
+
+%选择题
+%根据选项长短选择合适布局指令
+\newcommand{\fourch}[4]{\\\begin{tabular}{*{4}{@{}p{3.5cm}}}(A)~#1; & (B)~#2; & (C)~#3; & (D)~#4.\end{tabular}} % 四行
+\newcommand{\twoch}[4]{\\\begin{tabular}{*{2}{@{}p{7cm}}}(A)~#1; & (B)~#2;\end{tabular}\\\begin{tabular}{*{2}{@{}p{7cm}}}(C)~#3; &
+		(D)~#4.\end{tabular}}  %两行
+\newcommand{\onech}[4]{\\(A)~#1; \\ (B)~#2; \\ (C)~#3; \\ (D)~#4.}  % 一行
+
+%根据选项长短自动选择布局
+\newlength{\la}
+\newlength{\lb}
+\newlength{\lc}
+\newlength{\ld}
+\newlength{\lhalf}
+\newlength{\lquarter}
+\newlength{\lmax}
+\newcommand{\xx}[4]{\ \\[.5pt]%
+	\settowidth{\la}{(A)~#1;~~~}
+	\settowidth{\lb}{(B)~#2;~~~}
+	\settowidth{\lc}{(C)~#3;~~~}
+	\settowidth{\ld}{(D)~#4.~~~}
+	\ifthenelse{\lengthtest{\la > \lb}}
+	{\setlength{\lmax}{\la}}
+	{\setlength{\lmax}{\lb}}
+	\ifthenelse{\lengthtest{\lmax < \lc}}
+	{\setlength{\lmax}{\lc}}  {}
+	\ifthenelse{\lengthtest{\lmax < \ld}}
+	{\setlength{\lmax}{\ld}}  {}
+	\setlength{\lhalf}{0.5\linewidth}
+	\setlength{\lquarter}{0.25\linewidth}
+	\ifthenelse{\lengthtest{\lmax < \lquarter}}
+	{\noindent\makebox[\lquarter][l]{(A)~#1;~~~}%
+		\makebox[\lquarter][l]{(B)~#2;~~~}%
+		\makebox[\lquarter][l]{(C)~#3;~~~}%
+		\makebox[\lquarter][l]{(D)~#4.~~~}}%
+	{\ifthenelse{\lengthtest{\lmax < \lhalf}}
+		{\noindent\makebox[\lhalf][l]{(A)~#1;~~~}%
+			\makebox[\lhalf][l]{(B)~#2;~~~}\\%
+			\makebox[\lhalf][l]{(C)~#3;~~~}%
+			\makebox[\lhalf][l]{(D)~#4.~~~}}
+		{\noindent{}(A)~#1;  \\ (B)~#2; \\ (C)~#3; \\ (D)~#4. }
+	}
+}
+
+\theoremstyle{nonumberplain}
+%\theoremsymbol{\ensuremath{\Box}}
+\theorembodyfont{\rmfamily}
+\theoremheaderfont{\sffamily}
+\newtheorem{jieda}{解:}
+\newtheorem{proof}{证明:}
+
+\newcommand{\kb}{4cm}
+\newcommand{\jd}[1]{\iftagged{ans}{\begin{jieda}
+			#1
+	\end{jieda}}{\ \\[\kb]}}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{%
+	\rule{0.475\textwidth}{0.4pt} \hspace{0.05\textwidth}%
+	\rule{0.475\textwidth}{0.4pt}%\rule width 0.45\textwidth height 0.4pt
+}
+\pagestyle{fancy}
