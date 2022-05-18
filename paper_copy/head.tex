@@ -1,0 +1,52 @@
+\fancyhead[LO]{\iftagged{ans}{}{\begin{tabular}{|m{1.2cm}|m{5mm}|}\hline
+		\raisebox{-0.5ex}{座位号} &	\\[0.5ex]\hline
+\end{tabular}}}
+\fancyfoot[CO,CE]{\vspace*{1mm}\small%
+	\school20\underline{\xueniana}$\sim$20\underline{\xuenianb}\,学年第\underline{\xueqi}学期{《\kecheng》}\iftagged{ans}{试卷（\leixing）参考答案和评分标准}{课程考试试卷（\leixing）}第\underline{\stepcounter{mypage}\themypage}页,共\underline{\themylastpage}页 \hspace{1.5cm}
+	\school20\underline{\xueniana}$\sim$20\underline{\xuenianb}\,学年第\underline{\xueqi}学期{《\kecheng》}\iftagged{ans}{试卷（\leixing）参考答案和评分标准}{课程考试试卷（\leixing）}第\underline{\stepcounter{mypage}\themypage}页, 共\underline{\themylastpage}页}%\pageref{LastPage}
+\sbox{\zdx}
+{\parbox{27cm}{\centering
+%	座位号~\underline{\makebox[34mm][c]{}}~ 班~级\underline{\makebox[34mm][c]{}}~\CJKfamily{song} 学~号\underline{\makebox[44mm][c]{}}~\CJKfamily{song} 姓~名\underline{\makebox[34mm][c]{}} ~\\
+%	\vspace{3mm}
+%请在所附答题纸上空出密封位置。并填写试卷序号、班级、学号和 姓名\\
+%%答题时学号
+\vspace{1cm}
+\dotfill{} 密\dotfill{}封\dotfill{}线\dotfill{} \\
+	}}
+\reversemarginpar
+	
+\begin{spacing}{1.25}
+	\begin{center}
+\begin{LARGE}
+{\heiti\school~20\underline{\xueniana}~$\sim$~20\underline{\xuenianb}\,学年~第\,\underline{~\xueqi~}\,学期\\
+{《~\kecheng~》}\,\iftagged{ans}{试卷（\leixing）参考答案和评分标准}{课程考试试卷（~\leixing~）}}\\
+\end{LARGE}
+\end{center}
+%(闭卷笔试\ \ 90 分钟)\\
+	\vspace{0.5cm}
+
+\iftagged{ans}{\noindent 开课二级学院：\underline{\makebox[2cm][c]{\kaikexueyuan}}，学生班级：\underline{\makebox[4cm][c]{\class}}，教师：\underline{\makebox[2cm][c]{\teacher}}}%
+{开课二级学院：\underline{\makebox[3cm][c]{\kaikexueyuan}}，考试时间：\underline{~\nian~}年\underline{~\yue~}月\underline{~\ri~}日\underline{~\shi~}时
+
+ 考试形式：{闭卷{\raisebox{0.5ex}{\scalebox{0.8}[0.6]{\fbox{\iftagged{kai}{\color{white}}{}$\surd$}}}}、开卷{\raisebox{0.5ex}{\scalebox{0.8}[0.6]{\fbox{\iftagged{kai}{}{\color{white}}$\surd$}}}}}，允许带\underline{\makebox[6.5cm][c]{\ruchang}}入场
+ 
+ 考生姓名：\underline{\hspace{2cm}} 学号：\underline{\hspace{2cm}} 专业：\underline{\hspace{2cm}} 班级：\underline{\hspace{1.5cm}} 
+
+%\vspace{0.25cm}
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{0.0385\textwidth}|*{7}{>{\centering\arraybackslash}m{0.035\textwidth}|}}
+	\hline
+题~序 & 一 &  二 & 三 & 四 & 五 & 六 & 总~分  \\\hline
+得~分 &  &  &  &  &  &  &   \\\hline
+评卷人 &  &  &  &  &  &  &   \\\hline
+\end{tabular}
+\end{center}
+}
+\end{spacing}
+\vspace{-0.5cm}
+\setlength{\marginparsep}{1.7cm}
+\iftagged{ans}{}{\putzdx} %%装订线--奇页数
+\vspace{1cm}
+
+%\fancyhf{}
+\setcounter{mylastpage}{2*\getrefbykeydefault{LastPage}{page}{1}}
