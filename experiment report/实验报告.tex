@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{graphics}
+\usepackage{theorem}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}
+
+\begin{document}
+	\begin{center}
+		\Large \heiti 测量重力加速度的实验报告
+	\end{center}
+\section{实验目的}
+由于重力加速度与物体所处的纬度、海拔高度等因素有关，本实验旨在测量当地的重力加速度。
+\section{实验原理}
+分两种方法测量重力加速度
+\subsection{自由落体法}
+本实验采用双光电门法。固定光电门1，则小球通过光电门1的初始速度$ v_0 $不变。改变光电门的位置，设光电门2与光电门1的距离为$ h $，小球到达两光电门时间差是$ t $，则有
+$$ h=v_0t+\dfrac{1}{2}t^2 $$
+两端同时除以$ t $，得$ \dfrac{h}{t}=v_0+\dfrac{1}{2}gt $. 这样可以得到一条$ \dfrac{h}{t}-t $的直线，其斜率是$ \dfrac{1}{2}g $. 由此可知，只需要测量一系列的$ (h,t) $即可. 为了减小误差，多次改变光电门2的位置，得到一组数据$ (h_1,t_1),(h_2,t_2),\dots,(h_n,t_n) $，然后采用线性拟合即可. 在该实验中测量的组数$ n $为6-8组。
+\subsection{单摆法}
+由单摆的周期公式可知，$ g=\dfrac{4\pi^2l}{T^2} $，其中$ l $是摆长，$ T $是单摆的周期. 因而只需要测量$ l $与$ T $即能得知重力加速度。
+
+根据不确定度均分原理，$ \dfrac{\Delta g}{g} =\dfrac{\Delta l}{l}+2\dfrac{\Delta T}{T} $，所以要使$ \dfrac{\Delta g}{g}\le1 \%  $，则$ \dfrac{\Delta l}{l}\le 0.5\% $,$ \dfrac{\Delta T}{T}\le 0.25\% $. 
+
+由于钢卷尺的最大允差是0.2 cm，则摆长至少要$ l \ge \Delta l /0.5 \% =40 $cm，且摆长越长精度越高，故本实验摆长选在70 cm附近。摆长包括了摆线长和小球的半径，使用钢卷尺，当单摆静止时测量小球中心至悬挂点的高度为摆长。多次测量取平均值。
+
+对于周期$ T $，约取一次$ T=1.5s $，取$ \Delta T=0.2s $. 由于一次周期的时间太短，人的反映误差相对太大，因而需要测量多次全振动的时间再平均以计算周期，则所需要的次数$ N \ge \Delta T /(0.25 \%)/T =53 $次。考虑到小球振幅会慢慢减小，该实验测60个周期。在摆长不变的情况下，多次测量取平均值。
+\section{实验仪器}
+\subsection{自由落体}
+双光电门、数字毫秒计、小球。
+\subsection{单摆}
+卷尺、游标卡尺、千分尺、电子秒表、单摆（带标尺、平面镜，摆线长度可调）。
+\section{实验内容及测量的记录}
+\subsection{自由落体}
+光电门所连接的数字毫秒计显示 3 个值，分别对应从磁铁断电到从电磁铁断电到小球通过光电门 1 的时间差$ t_1 $、 从电磁铁断电到小球通过光电门 2 的时间差$ t_2 $、小球通过两个光电门的时间差$ \Delta t $，单位为 ms.将小球记录光电门1的刻度为$ h_1 $，光电门2的刻度为$ h_2 $，单位为cm。
+
+1.初始时，调节立柱使立柱竖直。然后通电，使立柱上端电磁铁吸住小球。
+
+2.按下按钮使小球自由下落。记录数字毫秒计的数据以及两个光电门所对应的刻度。
+
+3.重复以上操作3次。然后移动光电门2进行下一组。
+
+得到的实验数据如下：
+\begin{center}
+	表1：自由落体法的原始数据
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|ccc}
+			\hline
+			$ h_1 $/cm & 10    & 10    & 10    & 10    & 10    & 10    & 10    & 10    & 10    & \multicolumn{1}{c|}{10}    & \multicolumn{1}{c|}{10}    & \multicolumn{1}{c|}{10}    \\ \hline
+			$ h_2 $/cm & 40    & 40    & 40    & 45    & 45    & 45    & 50    & 50    & 50    & \multicolumn{1}{c|}{55}    & \multicolumn{1}{c|}{55}    & \multicolumn{1}{c|}{55}    \\ \hline
+			$ \Delta t $/ms   & 145.7 & 145.7 & 145.8 & 163.3 & 163.5 & 163.4 & 180.0   & 179.9 & 179.9 & \multicolumn{1}{c|}{195.7} & \multicolumn{1}{c|}{195.7} & \multicolumn{1}{c|}{195.7} \\ \hline
+			$ t_1 $/ms   & 137.3 & 137.3 & 137.2 & 137.3 & 137.4 & 137.3 & 137.4 & 137.5 & 137.4 & \multicolumn{1}{c|}{137.4} & \multicolumn{1}{c|}{137.7} & \multicolumn{1}{c|}{137.3} \\ \hline
+			$ t_2 $/ms   & 283.0 & 283.0 & 283.0 & 300.6 & 300.9 & 300.7 & 317.4 & 317.4 & 317.3 & \multicolumn{1}{c|}{333.1} & \multicolumn{1}{c|}{333.4} & \multicolumn{1}{c|}{333.0} \\ \hline
+			$ h_1 $/cm & 10    & 10    & 10    & 10    & 10    & 10    & 10    & 10    & 10    &                            &                            &                            \\ \cline{1-10}
+			$ h_2 $/cm & 60    & 60    & 60    & 65    & 65    & 65    & 70    & 70    & 70    &                            &                            &                            \\ \cline{1-10}
+			$ \Delta t $/ms    & 210.8 & 210.8 & 210.9 & 225.3 & 225.3 & 225.3 & 239.2 & 239.1 & 239.2 &                            &                            &                            \\ \cline{1-10}
+			$ t_1 $/ms & 137.3 & 137.5 & 137.3 & 137.5 & 137.4 & 137.6 & 137.1 & 137.4 & 137.4 &                            &                            &                            \\ \cline{1-10}
+			$ t_2 $/ms & 348.1 & 348.3 & 348.2 & 362.8 & 362.7 & 362.9 & 376.3 & 376.5 & 376.6 &                            &                            &                            \\ \cline{1-10}
+		\end{tabular}
+\end{center}
+
+\subsection{单摆}
+测量摆长为$ l $，单位为cm。测量60次全振动的时间为$ 60T $，读秒表上所显示的数字。
+
+1.开始实验前，应调节螺栓使立柱竖直，并调节标尺高度，使其上沿中点距悬挂点 50cm。
+
+2.使小球静止，用钢卷尺测量摆长。测量3次读数。
+
+3.将小球拉出一个角度$ \theta(\theta <5^\circ) $，然后无初速度释放。待其稳定地经过平衡位置时，开始计时，至60次全振动后结束计时。
+
+4.重复以上测量60次全振动时间的步骤3次。
+
+得到实验数据如下：
+\begin{center}
+	表2：单摆法原始数据
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			$ l $/cm & 71.84    & 71.82    & 71.85    \\ \hline
+			$ 60T $  & 1'42''40 & 1'42''62 & 1'42''25 \\ \hline
+		\end{tabular}
+\end{center}
+\section{数据处理和误差分析}
+\subsection{自由落体}
+将每组的$ \Delta t $的平均值作为$ t_i $，画出$ \dfrac{h}{t}-t $点图，然后用最小二乘法拟合如图。
+\begin{center}
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			$ t $(ms) & 145.7333 & 163.4    & 179.9333 & 195.7    & 210.8333 & 225.3    & 239.1667 \\ \hline
+			$ \dfrac{h}{t} $(cm/ms) & 0.205855 & 0.214198 & 0.222305 & 0.229944 & 0.237154 & 0.244119 & 0.250871 \\ \hline
+		\end{tabular}
+\end{center}
+% TODO: \usepackage{graphicx} required
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{001}
+	\caption{$ \dfrac{h}{t}-t $的最小二乘法拟合}
+	\label{fig:001}
+\end{figure}
+其中斜率为$ k=4.82138\times 10^{-4} \text{cm/ms}^2=5\times 10^{-5} g$，因而$ g=9.64276\text{m/s}^2 $.
+
+由于$ \dfrac{\Delta g}{g}=\dfrac{\Delta h}{h}+2\dfrac{\Delta t}{t} $，数字毫秒计的精度较高，其不确定度相比光电门的刻度长度的不确定度小得多，可忽略。而光电门的刻度一半为0.5cm，则其最大的不确定度为$ \dfrac{0.5}{10}\times 100\% =5\%$，故最终结果应表示为
+$$ g=(9.64 \pm 0.48) \text{m/s}^2$$.
+\subsection{单摆}
+取摆长的平均值$ \overline{l} =(71.82+71.84+71.85)/3=71.83667 $cm，周期的平均值为$ 60\overline{T}=(102.40+102.62+102.25)/3=102.42333 $s，即$ \overline{T}=1.70706 $s，所以重力加速度为$ g=9.73214\text{m/s}^2 $.
+
+摆长的不确定度：查表，当$ n=3,P=0.95 $时，$ t_p=4.30,k=1.96 $. 钢卷尺的最大允差为0.2cm. 平均值$ \overline{l}=71.83667 $cm，则A类不确定度为$ u_A=\dfrac{4.30}{\sqrt{2}}\times \sqrt{\dfrac{{\displaystyle \sum}_{i=1}^{3}(l_i-\overline{l})^2  }{2}}=0.065684$cm，B类不确定度为$ u_B=1.96\times \dfrac{0.2}{3} = 0.13067 $ cm，则合成不确定度为$ u_l=\sqrt{u_A^2+u_B^2}=0.14625 $cm.
+
+周期的不确定度：秒表的计时误差为人的反应时间0.2s加上秒表的最大允差0.01s，等于0.21s。对于60个周期，A类不确定度为$ u_A=\dfrac{4.30}{\sqrt{2}}\times \sqrt{\dfrac{{\displaystyle \sum}_{i=1}^{3}(60T_i-60\overline{T})^2  }{2}}=0.80023$s，B类不确定度为$ 1.96\times \dfrac{0.21}{3}=0.1372 $s，则合成不确定度$ u_T'=\sqrt{u_A^2+u_B^2}=0.81191 $s. 故每一个周期的不确定度为$ u_T=\dfrac{1}{60}u_T'=0.013532 $s.
+
+合成的不确定度：由公式
+$$ g=\dfrac{4\pi^2l}{T^2} $$
+合成的不确定度
+	$$f(l,T)=\sqrt{\left ( \dfrac{\partial g}{\partial l}u_l \right )^2 +\left ( \dfrac{\partial g}{\partial T}u_T \right )^2 } \\
+	=4\pi^2\sqrt{\left ( \dfrac{1}{g^2} u_l \right )^2 +\left ( -2\dfrac{l}{g^3} u_T \right )^2 }  $$
+则$ u=f(\overline{l},\overline{T})=0.02 \text{m/s}^2$
+故最终结果表示为
+$$ g=(9.73\pm 0.02)\text{m/s}^2 $$
+
+\section{思考题}
+\subsection{自由落体}
+1.在实际工作中，为什么利用(1)式很难精确测量重力加速度？
+
+因为运动至所要求的下落高度时，速度太快，且存在空气阻力，导致时间误差偏大。
+
+2.为了提高测量精度，光电门 1 和光电门 2 的位置应如何选取？
+
+光电门1的位置应与开始下落处有10~20cm的距离，光电门2与光电门1的距离更大一些，至少有30cm。
+
+3.利用本实验装置，你还能提出其他测量重力加速度的实验方案吗？
+
+由公式$ h_1=\dfrac{1}{2}gt_1^2,h_2=\dfrac{1}{2}gt_2^2 $，两式开方相减得$ g=\dfrac{2(\sqrt{h_1}-\sqrt{h_2})}{t_1-t_2} $. 可以保持光电门1,2的位置不变，多次测量取平均值.
+\subsection{单摆} 
+1.分析基本误差的来源，提出进行改进的方法
+
+(1)摆线的弹性。若摆线有弹性，在平衡位置时与在最高点处摆长会不相等，造成误差，实验中应使用弹性较小的摆线，减小摆长的误差。
+
+(2)摆角，周期实际上也与摆角有关，但在5度以内可以忽略，因而在摆动时摆角要在5度以内，但也不能够太小，否则全振动次数可能过短。
+
+(3)周期的测量，摆球通过平衡位置时，由于人的反应力有限，会导致开始和结束的时间存在误差，因而应当测量50次以上全振动来减小误差。
+
+(4)摆球平面，摆动时实际在一个圆锥面内摆动，因而要使摆球尽量在一个面内摆动，即在拉起小球松开时要稳定在装置的摆面内。
+\end{document}

@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{graphics}
+\usepackage{theorem}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}
+
+\begin{document}
+	\begin{center}
+		\Large \heiti 光电效应测普朗克常数实验报告
+	\end{center}
+\section{实验目的}
+测量普朗克常数 $ h $
+\section{实验原理}
+单色光照射在光电管的阴极上有电子发射出来的现象叫光电效应， 出射的电子称之为光电子，形成的电流称之为光电流。 光电流很弱。 加载在光电管中阳极与阴极之间电压为正值时，随着电压的增大光电流迅速增大，电压增大到一定值后，光电流趋于饱和。 加载在阳极与阴极之间电压为负值时， 随着电压数值逐渐变大，光电流变弱， 负电压数值增大到 $ U_0 $ 值时，光电流变为零。 把电压 $ U_0 $ 称之为遏止电压。本实验要求测量 5 种不同单色光分别照射下， 光电流的遏止电压值。 本实验还需测量和验证饱和光电流与光强之间的关系，是否满足线性正比关系。
+\section{实验仪器}
+使用ZKY-GD-4 智能光电效应（普朗克常数）实验仪。如图\ref{fig:1}。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{D:/STUDY/物理/实验方案与报告/光电效应(不交)/光电效应仪器}
+	\caption{仪器结构示意图}
+	\label{fig:1}
+\end{figure}
+\section{实验步骤及数据处理}
+\subsection{零电流法、补偿法分别测遏止电压}
+固定一种直径大小光阑的情况下， 分别测量 5 种不同单色光照射下，光电流的遏止电压。
+
+\kaishu a)测量数据记录如表1。
+
+b)用最小二乘法计算普朗克常数 $ h $ 大小，以及与公认值 $ h_0 $之间的相对误差
+
+c)计算此光电管阴极材料， 产生光电效应的单色照射光的波长红限，以及光电子从材料表面逸出的功大小。\songti
+\begin{table}[htbp]\small
+	\caption{不同单色光照射下的光电流的遏止电压}
+	\centering
+	\begin{tabular}{cccccc}
+		\multicolumn{6}{r}{光阑孔$ \Phi=4  $mm}                       \\
+		\toprule
+		波长$ \lambda_i $(nm)   & 365   & 404.7 & 435.8 & 546.1 & 577   \\
+		频率$ \nu _i $($ \times 10^{14} $Hz)   & 8.214 & 7.408 & 6.879 & 5.49  & 5.196 \\
+		\midrule
+		零电流法$ U_0 $(V) & 1.788 & 1.508 & 1.176 & 0.590 & 0.476 \\
+		\midrule
+		补偿法$ U_0 $(V)  & 1.798 & 1.508 & 1.178 & 0.588 & 0.474 \\
+		\bottomrule
+		\multicolumn{6}{r}{主机箱编号： 1823  光电管外壳编号：1823} \\
+	\end{tabular}
+\end{table}
+
+数据处理和分析：对表 1 中的单色光频率与遏止电压(正值)之间，在直角坐标纸上进行画图、描点，再进行(最小二乘)线性回归拟合分析，做出拟合直线。 写出拟合直线方程。(见图\ref{fig:2}和\ref{fig:3})
+% TODO: \usepackage{graphicx} required
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{D:/STUDY/物理/实验方案与报告/光电效应(不交)/零电流法}
+	\caption{零电流法线性拟合}
+	\label{fig:2}
+\end{figure}
+% TODO: \usepackage{graphicx} required
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../补偿法}
+	\caption{补偿法线性拟合}
+	\label{fig:3}
+\end{figure}
+
+\heiti 零电流法：\songti 线性拟合得拟合直线方程为$ y=(0.44428\pm 0.01664)x-(1.81429\pm 0.11206) $.
+根据上述拟合直线方程，计算：
+
+1.普朗克常数值为$ h=ek=(7.112\pm 0.267)\times 10^{-34}J\cdot S $.
+
+2.与公认值比较计算相对误差$ E=\dfrac{\left| h-h_0\right| }{h}=0.07416 \pm 0.04023$，得相对误差在$ 3.39\%\sim 11.44\% $.
+
+3.计算单色入射光逸出功为$ W_0=-be=(1.814\pm 0.112) $eV.
+
+4.计算单色入射光红限为$ \nu=(4.080\pm 0.099)\times 10^{14} $Hz.
+
+\heiti 补偿法：\songti 线性拟合得拟合直线方程为$ y=(0.44756\pm 0.0158)x-(1.86146\pm 0.10643) $.
+根据上述拟合直线方程，计算：
+
+1.普朗克常数值为$ h=ek=(7.169\pm 0.253)\times 10^{-34}J\cdot S $.
+
+2.与公认值比较计算相对误差$ E=\dfrac{\left| h-h_0\right| }{h}=0.08209\pm 0.03820$，得对误差在$ 4.38\%\sim 12.01\% $.
+
+3.计算单色入射光逸出功为$ W_0=-be=(1.861\pm 0.106) $eV.
+
+4.计算单色入射光红限为$ \nu=(4.156\pm 0.091)\times 10^{14} $Hz.
+\subsection{饱和光电流与光强之间的变化关系}
+测量饱和光电流与光强的关系。步骤如下：
+
+\kaishu a) 其一种情况是， 选择一种单色光，固定光电管阴阳极电压（在饱和区），改变不同的光阑（直径）大小，来改变光强.
+
+b) 另一种情况是， 选择一种单色光，固定光电管阴阳极电压（在饱和区），改变光电管与汞灯光源的距离，来改变光强.
+
+c) 二种测量内容，分别列表， 画图。验证饱和光电流与光强， 成正比关系。\songti
+
+得到数据如表2和3。由表格数据画图如图\ref{fig:4}和\ref{fig:5}。其中光照强度$ P $与光阑直径的关系为$ P\propto \Phi^2 $，距离$ L $关系为$ P\propto \dfrac{1}{L^2}  $，故图\ref{fig:4}的横坐标为$ \Phi^2 $，图\ref{fig:5}的横坐标为$ \dfrac{1}{L^2} $。可以看出，在实验允许的误差范围内，饱和电流与光照强度成正比。
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[htbp]\small
+	\caption{$ I_M-P $关系(改变光阑)}
+	\centering
+	\begin{tabular}{c|cccc}
+		\multicolumn{5}{r}{$ U $=20V, $ L $=400mm}                    \\
+		\toprule
+		\multirow{2}{*}{435.8nm} & $ \Phi $(nm) & 2   & 4     & 8     \\
+		& $ I $($ 10^{-10} $A)   & 8.2 & 31.0 & 124.3 \\
+		\midrule
+		\multirow{2}{*}{546.1nm} & $ \Phi $(nm) & 2   & 4     & 8     \\
+		& $ I $($ 10^{-10} $A)    & 1.0 & 3.7   & 13.9 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[htbp]
+	\caption{$ I_M-P $关系(改变距离)}
+	\centering
+	\begin{tabular}{c|cccccc}
+		\multicolumn{7}{r}{$ U $=20V, $ \Phi $=4mm}                                  \\
+		\toprule
+		\multirow{2}{*}{435.8nm} & $ L $(mm) & 300  & 320 & 340  & 360  & 380  \\
+		& $ I $($ 10^{-10} $A)  & 66.1 & 55.0        & 46.9 & 39.6 & 33.8 \\
+		\midrule
+		\multirow{2}{*}{546.1nm} & $ L $(mm) & 300  & 320 & 340  & 360  & 380  \\
+		& $ I $($ 10^{-10} $A)  & 7.6  & 6.3 & 5.4  & 4.7  & 4.1 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+% TODO: \usepackage{graphicx} required
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../改变光阑}
+	\caption{$ I_M-P $关系图(改变光阑)}
+	\label{fig:4}
+\end{figure}
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{../改变距离}
+	\caption{$ I_M-P $关系图(改变距离)}
+	\label{fig:5}
+\end{figure}
+\end{document}
