@@ -1,0 +1,52 @@
+\documentclass[11pt,oneside]{ctexbook} %使书页码在通一遍，避免空白页
+\usepackage{ctex}
+\usepackage{fontspec}
+\usepackage{setspace}
+%amsmath
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\numberwithin{equation}{section}
+\usepackage{graphicx}
+
+\everymath{\displaystyle}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\geometry{left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm}%页边距
+%设置数学要素
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{thmtools}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=Blue}
+\setfontfamily{\cons}{Consolas}
+\usepackage{listings}
+\lstset{
+	language = C++,
+	backgroundcolor = \color{black!80},
+	basicstyle=\cons\color{Khaki},
+	breaklines=true,
+	numbers=left,
+	numberstyle=\sffamily\small\color{black},
+	keywordstyle=\color{LightSkyBlue},
+	commentstyle=\color{ForestGreen},
+	stringstyle=\color{YellowOrange},
+	showspaces=false,% 显示添加特定下划线的空格
+	showstringspaces=false,%不显示字符串的空格
+	showtabs=false, % 在字符串中显示制表符
+	%title=\lstname\sffamily,
+	xleftmargin=1em,  xrightmargin=1em, % 设定listing左右的空白
+	escapeinside={}, % 特殊自定分隔符
+	morekeywords = {as}, % 自加新的关键字(必须前后都是空格)
+	columns=flexible,
+	aboveskip=1ex, belowskip=1ex,
+	framextopmargin=1pt, framexbottommargin=1pt,
+	abovecaptionskip=-2pt,belowcaptionskip=3pt,
+	% 设定中文冲突，断行，列模式，数学环境输入，listing数字的样式
+	extendedchars=false, columns=flexible, mathescape=true,
+	texcl=true,
+	fontadjust
+}
